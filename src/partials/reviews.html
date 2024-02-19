@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Benefits</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/css/reviews.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  </head>
+ 
+    <div class="div-button">
+        <button class="button" type="button" data-modal-open>Leave a review</button>
+    </div>
+  </div>
+  <!-- modal window -->
+   <div class="is-hidden modal-window" data-modal>
+      <div class="modal-white">
+        <button class="button-modal-window" type="button" data-modal-close>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+           <path d="M21 7L7 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <h2 class="title-modal-window">
+          LEAVE A REVIEW ABOUT
+        </h2>
+        <h2><span class="colored-title-modal">OUR CHOCOLATE</span></h2>
+        <form class="modal-window-form">
+            <div class="div-input">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="input-modal"
+                placeholder="Name"
+              />
+            </div>
+
+          <div class="modal-div">
+            <label for="email" class="label-modal"></label>
+            <div class="div-input">
+              <input type="text" id="email" name="email" class="input-modal" placeholder="Email" />
+            </div>
+          </div>
+
+           <div class="modal-div">
+            <label for="phone" class="label-modal"></label>
+            <div class="div-input">
+              <input type="tel" id="phone" name="phone" class="input-modal"/>
+              <svg width="32" height="24" class="svg-modal">
+                <use href="./images/icons.svg#Frame"></use>
+              </svg>
+              <p class="p-modal">+380</p>
+              <p class="placeholder">Phone number</p>
+            </div>
+          </div>
+
+          <div class="comment-div">
+            <textarea
+              class="text-area"
+              id="user-comment"
+              placeholder="Enter text"
+              name="user-comment"
+            ></textarea>
+          </div>
+          <button class="button-form-modal" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    </html>
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/slick.js" type="module" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).on('ready', function () {
+        $('.variable').slick({
+          dots: true,
+          infinite: true,
+          variableWidth: true,
+          arrows: false,
+          dotsClass: 'slick-dots',
+        });
+      });
+    </script>
+</html>
